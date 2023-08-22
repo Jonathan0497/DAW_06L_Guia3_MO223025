@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9ecef;
+}
+
+.calculadora {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#inputValor {
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: #e9ecef;
+    border: none;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[data-tipo="numero"] {
+    color: #003366;
+}
+
+button[data-tipo="operacion"] {
+    color: #ff8c00;
+}
+
+button:hover {
+    background-color: #dee2e6;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="Calculadora.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="inputValor" >
+        <div class="botones">
+            <button data-tipo="numero" data-valor="1">1</button>
+            <button data-tipo="numero" data-valor="2">2</button>
+            <button data-tipo="numero" data-valor="3">3</button>
+            <button data-tipo="operacion" data-op="sumar">+</button>
+            <button data-tipo="numero" data-valor="4">4</button>
+            <button data-tipo="numero" data-valor="5">5</button>
+            <button data-tipo="numero" data-valor="6">6</button>
+            <button data-tipo="operacion" data-op="restar">-</button>
+            <button data-tipo="numero" data-valor="7">7</button>
+            <button data-tipo="numero" data-valor="8">8</button>
+            <button data-tipo="numero" data-valor="9">9</button>
+            <button data-tipo="operacion" data-op="multiplicar">*</button>
+            <button data-tipo="operacion" data-op="inversa">1/x</button>
+            <button data-tipo="numero" data-valor="0">0</button>
+            <button data-tipo="operacion" data-op="cuadrado">x^2</button>
+            <button data-tipo="operacion" data-op="raiz">√</button>
+            <button data-tipo="operacion" data-op="dividir">/</button>
+            <button data-tipo="operacion" data-op="residuo">%</button>
+            <button data-tipo="operacion" data-op="igual">=</button>
+            <button data-tipo="operacion" data-op="igual" id="reinicio">C</button>
+        </div>
+    </div>
+    <script src="Calculadora.js"></script>
+</body>
+</html>
